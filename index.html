@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Конвертер валют</h1>
+    </header>
+
+    <main class="main">
+        <section class="converter-section">
+            <h2>Конвертация валют</h2>
+
+            <div class="input-group">
+                <label for="amount">Сумма:</label>
+                <input type="number" id="amount" class="amount" placeholder="Сумма" value="1" />
+            </div>
+
+            <div class="input-group">
+                <label for="currency-from">Из:</label>
+                <select id="currency-from" class="currency-from"></select>
+            </div>
+
+            <div class="input-group">
+                <label for="currency-to">В:</label>
+                <select id="currency-to" class="currency-to"></select>
+            </div>
+
+            <button class="convert-button">Конвертировать</button>
+
+            <div class="result">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Конвертер валют</p>
+    </footer>
+</body>
+</html>
